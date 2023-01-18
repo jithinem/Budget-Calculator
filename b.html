@@ -13,16 +13,21 @@
 <body>
     <center>
         <div class="r1" style="display: flex; justify-content: center;">
-            <div><h2 class="text-danger">Budget Calculator App</h2></div>
+            <div><h1 class="text-danger" style="text-shadow: 3px 3px 3px; font-weight: bolder;">Budget Calculator App</h1></div>
             <div><img style="width: 60px;" src="./Financial-Budget-PNG-HD.png" alt=""></div>
         </div>
         </div>
     </center><br><br>
     <div class="row">
-        <div class="col-4 ">
+        <div class="col-4"><br>
+            <div class="r21">
+                <label for="">Enter your full name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" placeholder="full name">
+            </div><br>
+
             <div class="r2">
                 <label for="">Enter your phone number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                <input type="number" placeholder="">
+                <input type="number" placeholder="phone number">
             </div><br>
             <div class="r2-2">
                 <label for="">Choose the month&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
@@ -42,50 +47,49 @@
                     <option value="">December</option>
 
                 </select>
-            </div><br>
+            </div><br><br>
             <div class="r3">
                 <label for="">Enter your total monthly income</label>
-                <input type="number" placeholder="in $">
-            </div>
+                <input type="number" id="total" placeholder="in $">
+            </div><br><br>
+            <div id="result"></div>
         </div>
-        <div class="col-8 ">
+        <div class="col-6 ">
             <center>
-                <div class="r4"><h3>Monthly expenses</h3>
+                <div class="r4"><h3 style="font-weight: bolder;">Monthly expenses</h3>
                 </div>
                 <div class="r5">
-                    <p>Please fill out the below boxes based on your spending on the different categories in $.</p>
+                    <p style="font-weight: bolder;">Please fill out the below boxes based on your spending on the different categories in $.</p>
                 </div>
                 <div class="r6">
-                    <input type="text" class="form-control-lg" placeholder="Household">    
+                    <input type="text" id="household" class="form-control-lg" placeholder="Household">    
                 </div><br>
                 <div class="r6">
-                    <input type="text" class="form-control-lg" placeholder="Food">    
+                    <input type="text" id="food" class="form-control-lg" placeholder="Food">    
                 </div><br>
                 <div class="r6">
-                    <input type="text" class="form-control-lg" placeholder="Transportation">    
+                    <input type="text" id="transportation" class="form-control-lg" placeholder="Transportation">    
                 </div><br>
                 <div class="r6">
-                    <input type="text" class="form-control-lg" placeholder="Shopping">    
+                    <input type="text" id="shopping" class="form-control-lg" placeholder="Shopping">
                 </div><br>
                 <div class="r6">
-                    <input type="text" class="form-control-lg" placeholder="Emergency">    
+                    <input type="text" id="emergency" class="form-control-lg" placeholder="Emergency">    
                 </div><br>
                 <div class="r6">
-                    <input type="text" class="form-control-lg" placeholder="Savings">    
+                    <input type="text" id="entertainment" class="form-control-lg" placeholder="Entertainment">    
                 </div><br>
                 <div class="r6">
-                    <input type="text" class="form-control-lg" placeholder="Others">    
+                    <input type="text" id="others" class="form-control-lg" placeholder="Others">    
                 </div>
+            </center>          
+       </div>
+       <div class="col-2">
+        <button onclick="submit()" style="margin-top: 550px; width: 150px;" class="rounded">Submit</button>
 
-
-                
-
-            </center>
-            
-            
-        </div>
+       </div>
     </div>
-
-
 </body>
+
+<script src="./b.js"></script>
 </html>

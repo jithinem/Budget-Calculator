@@ -1,0 +1,31 @@
+body{
+    background-image: url(./budget.png);
+}
+input,select{
+    background-color: rgb(222, 208, 131);
+    border: 2px black solid;
+    border-radius: 5px;
+    width: 230px;
+}
+input:hover{
+    box-shadow: 3px 3px 3px;
+    background-color: yellow;
+}
+select:hover{
+    box-shadow: 3px 3px 3px;
+    background-color: yellow;
+}
+
+label{
+    font-weight: bolder;
+    color: rgb(34, 10, 216);
+}
+button{
+    border: 3px black solid;
+    border-radius: 10px;
+    background-color: rgb(231, 231, 18);
+}
+button:hover{
+    background-color: rgb(59, 144, 228);
+    box-shadow: 3px 3px 3px;
+}
